@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آلة حاسبة</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./test.js">
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.calculator {
+    background-color: #181515;
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+}
+
+.screen {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #777;
+}
+.btn-equals{
+    background-color: rgb(139, 26, 26);
+    color: #ffffff;
+}
+.btn-del{
+    background-color: #064457;
+    color: #ffffff;
+}
+</style>
+</head>
+<body>
+
+    <script>
+
+        var x = 5;
+        var y = 5;
+        // الجمع 
+        var sum = x + y;
+    
+        // الطرح
+        var difference = x - y;
+    
+        // الضرب
+        var product = x * y;
+    
+        // القسمة
+        var quotient = x / y;
+    
+        document.querySelector('#res').innerHTML = sum;
+    
+      </script>
+    
+
+<div class="calculator">
+    <input type="number" class="screen" id="res" >
+    <div class="buttons">
+        <button class="btn-del">DEL</button>
+        <button class="btn">()</button>
+        <button class="btn">%</button>
+        <button class="btn">/</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">*</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">-</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">+</button>
+        <button class="btn">+/-</button>
+        <button class="btn">0</button>
+        <button class="btn">. </button>
+        <button class="btn-equals">=</button>
+
+    </div>
+</div>
+</body>
+</html>
